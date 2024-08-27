@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/logo_min.png" rel="icon" type="image/png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto online</title>
+</head>
+<body>
+    <header> 
+        <img class="logo_alura" src="assets/Head_Logo.png" alt="Logo de Karina Hernández">
+    </header>
+
+   <main>
+        <div class="ins__texto">
+            <textarea id="mensaje" name="ins_textbox_name">Ingresa el texto aquí...</textarea>
+            <p class="ins__texto__alert">
+                <img src="assets/alert.png" alt="alerta">
+                Solo letras minúsculas y sin acentos.
+            </p>
+            <div class="boton">
+                <button class="encriptar">Encriptar</button>
+                <button class="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="output">
+            <img class="output_img" src="assets/notextimg.png">
+            <h2 class="output__titulo">Ningún mensaje fue encontrado.</h2>
+            <p class="output__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="" target="_blank"><img src="assets/Footer_Logo.png" class="footer__logo"></a>
+        <p class="footer__text"> Hecho por Karina Hernández</p>    
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-font: "Poppins", sans-serif;
+    --color-primario: #146ae3;
+    --color-secundario:  #C34566;
+    --color-desactivated: #ffe7ed;
+    --color-back: #ffe1e1;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--color-back)
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    max-width: 100vw;
+    min-height: 50vh;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 16px;
+
+}
+
+header {
+    box-sizing: border-box;
+    width: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.logo_alura{
+    width: 7.5rem;
+    height: 3rem;
+    margin: 2.5rem;
+}
+
+.ins__texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: auto;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.ins__texto__alert{
+    display: flex;
+    align-self: flex-start;
+    text-align: left;
+    margin-left: 1rem;
+    gap: 0.5rem;
+    font-family: var(--primary-font);
+    font-size: 0.75rem;
+    color: #495057;
+}
+
+textarea{
+    width: 50vw;
+    height: 50vh;
+    margin: 1rem;
+    padding: 5vh;
+    border-radius: 16px;
+    color: var(--color-primario);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+
+.output {
+    background-color: white; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: 8rem;
+    width: 25rem;
+    height: 80vh;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px rgba(0, 0, 0, 0.08);
+}
+
+.output_img, .output__texto, .output__titulo{
+    /* background-color: white; */
+}
+
+.output_img {
+    width: 21rem;
+    height: 19rem;
+}
+
+.output__titulo{
+    margin-top: 2rem;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 1.5rem;
+    width: 21rem;
+}
+
+.output__texto{
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    width: 21rem;
+    margin-top: 1rem;
+}
+
+.copiar{
+    background-color: var(--color-secundario);
+    padding: 1.5rem;
+    margin: 1.5rem;
+    width: 20.5rem;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    border: 2px solid transparent;  
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: white;
+    box-shadow: none;
+    outline: none;
+}
+
+.copiar:hover{
+    border-color: var(--color-secundario);
+    color: var(--color-secundario);
+    background-color: white;
+}
+
+.mensajeFinal {
+    max-width: 80%;
+    max-height: 80%;
+    text-align: left;
+    margin-top: 1.5rem;
+    /* background-color: white; */
+    color: #495057;
+    box-sizing: border-box;
+    overflow: auto;
+    text-wrap: wrap;
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.boton{
+    gap: 1.5rem;
+}
+
+.encriptar, .desencriptar{
+    padding: 1.5rem;
+    width: 20.5rem;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.encriptar{
+    background-color: var(--color-primario);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.desencriptar{
+    background-color: var(--color-desactivated);
+    border-color: var(--color-secundario);
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+.desencriptar:hover{
+    background-color: #C34566;
+    color: white;
+}
+
+.encriptar:hover{
+    background-color: white;
+    color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+
+footer{
+    margin-top: 48px;
+    padding: .5rem;
+    background-color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer__text{
+    font-family: var(--primary-font);
+    font-size: 1em;
+    color: white;
+
+}
+
+
+
+.footer__logo{
+    margin-right: 16px;
+}
+
+a{
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+
+@media (max-width: 1254px) {
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .output{
+        margin: auto;
+    }
+    .output__texto{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    header{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .encriptar, .desencriptar{
+        width: 250px;
+    }
+
+
+}
+
+@media (max-width: 780px) {
+    .ins__texto{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    textarea{
+        width: 50vh;
+    }
+
+
+    .boton{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .output_img{
+        display: none;
+    }
+
+    .output__texto{
+        height: auto;
+        max-width: 80%;
+    }
+
+    .output__texto-parrafo{
+        font-size: 0.8rem;
+        width: fit-content;
+        margin-bottom: 1rem;
+        max-width: 80%;
+    }
+
+    .output__texto-titulo{
+        font-size: 1rem;
+        width: fit-content;
+    }
+
+    .copiar{
+        width: 80%;
+    }
+}
